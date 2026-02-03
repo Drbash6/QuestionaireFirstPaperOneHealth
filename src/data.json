@@ -1,0 +1,910 @@
+{
+  "sections": [
+    {
+      "id": "A",
+      "title": {
+        "en": "Eligibility and Background (Quantitative)",
+        "ar": "الأهلية والخلفية (كمي)"
+      },
+      "questions": [
+        {
+          "id": "1",
+          "text": {
+            "en": "Do you currently work in a healthcare-related role?",
+            "ar": "هل تعمل حاليًا في وظيفة متعلقة بالرعاية الصحية؟"
+          },
+          "instruction": {
+            "en": "(select one)",
+            "ar": "(اختر واحدًا)"
+          },
+          "subtype": null
+        },
+        {
+          "id": "2",
+          "text": {
+            "en": "Primary role",
+            "ar": "الدور الوظيفي الأساسي"
+          },
+          "instruction": {
+            "en": "(select one):",
+            "ar": "(اختر واحدًا):"
+          },
+          "subtype": null
+        },
+        {
+          "id": "3",
+          "text": {
+            "en": "Organization type",
+            "ar": "نوع المؤسسة"
+          },
+          "instruction": {
+            "en": "(select one):",
+            "ar": "(اختر واحدًا):"
+          },
+          "subtype": null
+        },
+        {
+          "id": "4",
+          "text": {
+            "en": "Sector focus",
+            "ar": "تركيز القطاع"
+          },
+          "instruction": {
+            "en": "(select all that apply):",
+            "ar": "(اختر جميع ما ينطبق):"
+          },
+          "subtype": null
+        },
+        {
+          "id": "5",
+          "text": {
+            "en": "Years of experience",
+            "ar": "سنوات الخبرة"
+          },
+          "instruction": {
+            "en": "(select one):",
+            "ar": "(اختر واحدًا):"
+          },
+          "subtype": null
+        },
+        {
+          "id": "6",
+          "text": {
+            "en": "Highest education",
+            "ar": "أعلى مؤهل علمي"
+          },
+          "instruction": {
+            "en": "(select one):",
+            "ar": "(اختر واحدًا):"
+          },
+          "subtype": null
+        },
+        {
+          "id": "7",
+          "text": {
+            "en": "Gender",
+            "ar": "الجنس"
+          },
+          "instruction": {
+            "en": "(select one):",
+            "ar": "(اختر واحدًا):"
+          },
+          "subtype": null
+        },
+        {
+          "id": "8",
+          "text": {
+            "en": "Country/region of practice",
+            "ar": "البلد/المنطقة التي تعمل بها:"
+          },
+          "instruction": {
+            "en": ": ____",
+            "ar": "____"
+          },
+          "subtype": null
+        }
+      ]
+    },
+    {
+      "id": "B",
+      "title": {
+        "en": "Objective Knowledge Check (Quantitative)",
+        "ar": "فحص المعرفة الموضوعي (كمي)"
+      },
+      "questions": [
+        {
+          "id": "9",
+          "text": {
+            "en": "Which statement best defines One Health?",
+            "ar": "أي عبارة تُعرف \"صحة واحدة\" بشكل أفضل؟"
+          },
+          "instruction": {
+            "en": "(select one)",
+            "ar": "(اختر واحدًا)"
+          },
+          "subtype": null
+        },
+        {
+          "id": "10",
+          "text": {
+            "en": "Which of the following is an example of One Health practice?",
+            "ar": "أي مما يلي يُعد مثالًا على ممارسة \"صحة واحدة\"؟"
+          },
+          "instruction": {
+            "en": "(select one)",
+            "ar": "(اختر واحدًا)"
+          },
+          "subtype": null
+        },
+        {
+          "id": "11",
+          "text": {
+            "en": "Which SDG is most directly aligned with health outcomes?",
+            "ar": "أي هدف من أهداف التنمية المستدامة يرتبط بشكل مباشر بالنتائج الصحية؟"
+          },
+          "instruction": {
+            "en": "(select one)",
+            "ar": "(اختر واحدًا)"
+          },
+          "subtype": null
+        }
+      ]
+    },
+    {
+      "id": "C",
+      "title": {
+        "en": "Core Perceptions (Quantitative)",
+        "ar": "التصورات الأساسية (كمي)"
+      },
+      "questions": [
+        {
+          "id": "12",
+          "text": {
+            "en": "I am familiar with the One Health approach.",
+            "ar": "أنا على دراية بنهج صحة واحدة."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C1. Awareness and Relevance"
+        },
+        {
+          "id": "13",
+          "text": {
+            "en": "I can explain how human, animal, and environmental health are interconnected.",
+            "ar": "أستطيع شرح كيف تترابط صحة الإنسان والحيوان والبيئة."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C1. Awareness and Relevance"
+        },
+        {
+          "id": "14",
+          "text": {
+            "en": "One Health is relevant to my day-to-day work.",
+            "ar": "نهج صحة واحدة ذو صلة مباشرة بعملي اليومي."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C1. Awareness and Relevance"
+        },
+        {
+          "id": "15",
+          "text": {
+            "en": "I have participated in at least one One Health-related initiative.",
+            "ar": "شاركت في مبادرة واحدة على الأقل مرتبطة بصحة واحدة."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C1. Awareness and Relevance"
+        },
+        {
+          "id": "16",
+          "text": {
+            "en": "One Health is too theoretical to apply in practice. (R)",
+            "ar": "نهج صحة واحدة نظري جدًا ويصعب تطبيقه عمليًا. (معكوس)"
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C1. Awareness and Relevance"
+        },
+        {
+          "id": "17",
+          "text": {
+            "en": "My organization integrates One Health into policies or standard procedures.",
+            "ar": "تدمج مؤسستي نهج صحة واحدة في السياسات أو الإجراءات القياسية."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C2. Organizational Readiness and Resources"
+        },
+        {
+          "id": "18",
+          "text": {
+            "en": "Leadership actively supports One Health initiatives.",
+            "ar": "القيادة تدعم بفاعلية مبادرات صحة واحدة."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C2. Organizational Readiness and Resources"
+        },
+        {
+          "id": "19",
+          "text": {
+            "en": "Resource allocation for One Health is adequate in my organization.",
+            "ar": "تخصيص الموارد لنشاطات صحة واحدة كافٍ في مؤسستي."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C2. Organizational Readiness and Resources"
+        },
+        {
+          "id": "20",
+          "text": {
+            "en": "Our organization has designated roles or teams for One Health.",
+            "ar": "لدى مؤسستنا أدوار أو فرق مخصصة لصحة واحدة."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C2. Organizational Readiness and Resources"
+        },
+        {
+          "id": "21",
+          "text": {
+            "en": "Lack of resources prevents meaningful One Health implementation. (R)",
+            "ar": "نقص الموارد يمنع التنفيذ المجدي لنهج صحة واحدة. (معكوس)"
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C2. Organizational Readiness and Resources"
+        },
+        {
+          "id": "22",
+          "text": {
+            "en": "Collaboration across human, animal, and environmental sectors is effective.",
+            "ar": "التعاون عبر قطاعات الإنسان والحيوان والبيئة فعال."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C3. Intersectoral Collaboration"
+        },
+        {
+          "id": "23",
+          "text": {
+            "en": "External partnerships (NGOs, universities, government) strengthen One Health efforts.",
+            "ar": "الشراكات الخارجية (المنظمات غير الحكومية، الجامعات، الحكومة) تعزز جهود صحة واحدة."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C3. Intersectoral Collaboration"
+        },
+        {
+          "id": "24",
+          "text": {
+            "en": "Data sharing across sectors is routine in my organization.",
+            "ar": "مشاركة البيانات عبر القطاعات هو إجراء روتيني في مؤسستي."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C3. Intersectoral Collaboration"
+        },
+        {
+          "id": "25",
+          "text": {
+            "en": "Cross-sector coordination is difficult in practice. (R)",
+            "ar": "التنسيق بين القطاعات صعب في الواقع العملي. (معكوس)"
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C3. Intersectoral Collaboration"
+        },
+        {
+          "id": "26",
+          "text": {
+            "en": "One Health initiatives in my organization align with SDG 3 goals.",
+            "ar": "تتماشى مبادرات صحة واحدة في مؤسستي مع أهداف الهدف 3 من أهداف التنمية المستدامة."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C4. SDG 3 Alignment and Outcomes"
+        },
+        {
+          "id": "27",
+          "text": {
+            "en": "One Health practices have improved patient or community outcomes where I work.",
+            "ar": "حسّنت ممارسات صحة واحدة نتائج المرضى أو المجتمع في مكان عملي."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C4. SDG 3 Alignment and Outcomes"
+        },
+        {
+          "id": "28",
+          "text": {
+            "en": "We can demonstrate measurable health outcomes from One Health activities.",
+            "ar": "يمكننا إثبات نتائج صحية قابلة للقياس من أنشطة صحة واحدة."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C4. SDG 3 Alignment and Outcomes"
+        },
+        {
+          "id": "29",
+          "text": {
+            "en": "One Health does not influence core health outcomes in my setting. (R)",
+            "ar": "لا يؤثر نهج صحة واحدة على النتائج الصحية الأساسية في بيئتي. (معكوس)"
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C4. SDG 3 Alignment and Outcomes"
+        },
+        {
+          "id": "30",
+          "text": {
+            "en": "Gender-based barriers affect access to healthcare in my setting.",
+            "ar": "تؤثر العوائق القائمة على النوع الاجتماعي على الوصول إلى الرعاية الصحية في بيئتي."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C5. Gender Equity Climate and Integration"
+        },
+        {
+          "id": "31",
+          "text": {
+            "en": "Gender equity is prioritized in our service delivery models.",
+            "ar": "تُعطى الأولوية للعدالة الجندرية في نماذج تقديم الخدمات لدينا."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C5. Gender Equity Climate and Integration"
+        },
+        {
+          "id": "32",
+          "text": {
+            "en": "Women face disproportionate health risks linked to environmental or animal health.",
+            "ar": "تواجه النساء مخاطر صحية غير متكافئة مرتبطة بالصحة البيئية أو الحيوانية."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C5. Gender Equity Climate and Integration"
+        },
+        {
+          "id": "33",
+          "text": {
+            "en": "Our organization collects gender-disaggregated health data.",
+            "ar": "تجمع مؤسستنا بيانات صحية مفصّلة حسب النوع الاجتماعي."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C5. Gender Equity Climate and Integration"
+        },
+        {
+          "id": "34",
+          "text": {
+            "en": "Staff are trained to recognize gender-related barriers.",
+            "ar": "يتم تدريب الموظفين للتعرف على العوائق المرتبطة بالنوع الاجتماعي."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C5. Gender Equity Climate and Integration"
+        },
+        {
+          "id": "35",
+          "text": {
+            "en": "Gender considerations are integrated into One Health programs.",
+            "ar": "يتم دمج الاعتبارات الجندرية في برامج صحة واحدة."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C5. Gender Equity Climate and Integration"
+        },
+        {
+          "id": "36",
+          "text": {
+            "en": "Gender considerations are treated as optional in One Health activities. (R)",
+            "ar": "تُعامل الاعتبارات الجندرية كأمر اختياري في أنشطة صحة واحدة. (معكوس)"
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C5. Gender Equity Climate and Integration"
+        },
+        {
+          "id": "37",
+          "text": {
+            "en": "Training and capacity-building on One Health are sufficient for staff needs.",
+            "ar": "التدريب وبناء القدرات حول صحة واحدة كافٍ لاحتياجات الموظفين."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C6. Training and Capacity Building"
+        },
+        {
+          "id": "38",
+          "text": {
+            "en": "Awareness campaigns have improved One Health knowledge in my organization.",
+            "ar": "أدت حملات التوعية إلى تحسين المعرفة بصحة واحدة في مؤسستي."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C6. Training and Capacity Building"
+        },
+        {
+          "id": "39",
+          "text": {
+            "en": "I feel confident applying One Health principles in practice.",
+            "ar": "أشعر بالثقة في تطبيق مبادئ صحة واحدة في الممارسة العملية."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C6. Training and Capacity Building"
+        },
+        {
+          "id": "40",
+          "text": {
+            "en": "Limited training reduces the effectiveness of One Health initiatives. (R)",
+            "ar": "التدريب المحدود يقلل من فاعلية مبادرات صحة واحدة. (معكوس)"
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C6. Training and Capacity Building"
+        },
+        {
+          "id": "41",
+          "text": {
+            "en": "Community engagement is essential for One Health success.",
+            "ar": "تعد مشاركة المجتمع ضرورية لنجاح صحة واحدة."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C7. Community and Culture"
+        },
+        {
+          "id": "42",
+          "text": {
+            "en": "Cultural norms can hinder adoption of One Health practices.",
+            "ar": "يمكن للأعراف الثقافية أن تعيق تبني ممارسات صحة واحدة."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C7. Community and Culture"
+        },
+        {
+          "id": "43",
+          "text": {
+            "en": "Tailored communication improves community acceptance of One Health messages.",
+            "ar": "التواصل المخصص والموجه يحسن قبول المجتمع لرسائل صحة واحدة."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C7. Community and Culture"
+        },
+        {
+          "id": "44",
+          "text": {
+            "en": "Social marketing approaches help change health behaviors in my community.",
+            "ar": "تساعد أساليب التسويق الاجتماعي في تغيير السلوكيات الصحية في مجتمعي."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C7. Community and Culture"
+        },
+        {
+          "id": "45",
+          "text": {
+            "en": "Community trust in health messaging is low in my setting. (R)",
+            "ar": "ثقة المجتمع في الرسائل الصحية منخفضة في بيئتي. (معكوس)"
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C7. Community and Culture"
+        },
+        {
+          "id": "46",
+          "text": {
+            "en": "Our organization has formal policies that promote gender-inclusive healthcare.",
+            "ar": "لدى مؤسستنا سياسات رسمية تعزز الرعاية الصحية الشاملة جندريًا."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C8. Policy, Leadership, and Monitoring"
+        },
+        {
+          "id": "47",
+          "text": {
+            "en": "Women have meaningful leadership roles in One Health initiatives.",
+            "ar": "للنساء أدوار قيادية ذات معنى في مبادرات صحة واحدة."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C8. Policy, Leadership, and Monitoring"
+        },
+        {
+          "id": "48",
+          "text": {
+            "en": "We use clear indicators to measure One Health program effectiveness.",
+            "ar": "نستخدم مؤشرات واضحة لقياس فاعلية برنامج صحة واحدة."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C8. Policy, Leadership, and Monitoring"
+        },
+        {
+          "id": "49",
+          "text": {
+            "en": "Evaluation results are used to improve One Health programs.",
+            "ar": "تُستخدم نتائج التقييم لتحسين برامج صحة واحدة."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C8. Policy, Leadership, and Monitoring"
+        },
+        {
+          "id": "50",
+          "text": {
+            "en": "Monitoring systems are too weak to track One Health impact. (R)",
+            "ar": "أنظمة المراقبة ضعيفة جدًا لتتبع تأثير صحة واحدة. (معكوس)"
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C8. Policy, Leadership, and Monitoring"
+        },
+        {
+          "id": "51",
+          "text": {
+            "en": "One Health approaches are essential for long-term population health.",
+            "ar": "مناهج صحة واحدة ضرورية لصحة السكان على المدى الطويل."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C9. Future Orientation and Behavioral Intent"
+        },
+        {
+          "id": "52",
+          "text": {
+            "en": "Addressing gender inequities is critical to future One Health success.",
+            "ar": "معالجة عدم المساواة الجندرية أمر بالغ الأهمية لنجاح مستقبل صحة واحدة."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C9. Future Orientation and Behavioral Intent"
+        },
+        {
+          "id": "53",
+          "text": {
+            "en": "I intend to advocate for One Health integration in my organization.",
+            "ar": "أنوي الدعوة لدمج صحة واحدة في مؤسستي."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C9. Future Orientation and Behavioral Intent"
+        },
+        {
+          "id": "54",
+          "text": {
+            "en": "I intend to promote gender-sensitive practices in One Health programs.",
+            "ar": "أنوي تعزيز الممارسات الحساسة للنوع الاجتماعي في برامج صحة واحدة."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C9. Future Orientation and Behavioral Intent"
+        },
+        {
+          "id": "55",
+          "text": {
+            "en": "One Health should be expanded in my region over the next 3 years.",
+            "ar": "يجب توسيع نطاق صحة واحدة في منطقتي خلال السنوات الثلاث القادمة."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": "C9. Future Orientation and Behavioral Intent"
+        }
+      ]
+    },
+    {
+      "id": "D",
+      "title": {
+        "en": "Barriers Checklist (Quantitative)",
+        "ar": "قائمة العوائق (كمي)"
+      },
+      "questions": [
+        {
+          "id": "Barriers",
+          "text": {
+            "en": "Which barriers have you encountered?",
+            "ar": ""
+          },
+          "instruction": {
+            "en": "(select all that apply)",
+            "ar": ""
+          },
+          "subtype": "Checklist"
+        }
+      ]
+    },
+    {
+      "id": "E",
+      "title": {
+        "en": "Quality Check (Quantitative)",
+        "ar": "فحص الجودة (كمي)"
+      },
+      "questions": [
+        {
+          "id": "56",
+          "text": {
+            "en": "Attention check:",
+            "ar": "فحص الانتباه:"
+          },
+          "instruction": {
+            "en": "Please select **Agree** for this item.",
+            "ar": "يرجى اختيار **أوافق** لهذا البند."
+          },
+          "subtype": null
+        }
+      ]
+    },
+    {
+      "id": "F",
+      "title": {
+        "en": "Qualitative Questions (Convergent Mixed-Methods)",
+        "ar": "أسئلة نوعية (طريقة مختلطة متقاربة)"
+      },
+      "questions": [
+        {
+          "id": "1",
+          "text": {
+            "en": "Describe any One Health initiative or policy in your organization and its impact.",
+            "ar": "صف أي مبادرة أو سياسة لصحة واحدة في مؤسستك وتأثيرها."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": null
+        },
+        {
+          "id": "2",
+          "text": {
+            "en": "What are the most significant gender-related challenges you observe in healthcare delivery?",
+            "ar": "ما هي أهم التحديات المرتبطة بالنوع الاجتماعي التي تلاحظها في تقديم الرعاية الصحية؟"
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": null
+        },
+        {
+          "id": "3",
+          "text": {
+            "en": "Choose one high-rated item from Section C and explain why you rated it highly.",
+            "ar": "اختر بندًا واحدًا حصل على تقييم عالٍ من القسم \"ج\" واشرح سبب تقييمك العالي له."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": null
+        },
+        {
+          "id": "4",
+          "text": {
+            "en": "Choose one low-rated item from Section C and explain the underlying reasons.",
+            "ar": "اختر بندًا واحدًا حصل على تقييم منخفض من القسم \"ج\" واشرح الأسباب الكامنة وراءه."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": null
+        },
+        {
+          "id": "5",
+          "text": {
+            "en": "How does One Health contribute to SDG 3 goals in your setting? Provide a case or example.",
+            "ar": "كيف يساهم برنامج \"صحة واحدة\" في تحقيق أهداف الهدف 3 في بيئتك؟ قدّم حالة أو مثالاً."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": null
+        },
+        {
+          "id": "6",
+          "text": {
+            "en": "What barriers most hinder One Health implementation, and how have they been addressed?",
+            "ar": "ما هي العوائق التي تعيق تنفيذ برنامج \"صحة واحدة\" بشكل أكبر، وكيف تمت معالجتها؟"
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": null
+        },
+        {
+          "id": "7",
+          "text": {
+            "en": "How can gender considerations be better integrated into One Health programs?",
+            "ar": "كيف يمكن دمج الاعتبارات الجنسانية بشكل أفضل في برامج \"صحة واحدة\"؟"
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": null
+        },
+        {
+          "id": "8",
+          "text": {
+            "en": "Describe any training or awareness activity that improved One Health knowledge.",
+            "ar": "صف أي نشاط تدريبي أو توعوي أدى إلى تحسين المعرفة ببرنامج \"صحة واحدة\"."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": null
+        },
+        {
+          "id": "9",
+          "text": {
+            "en": "How do cultural norms influence healthcare delivery in your community?",
+            "ar": "كيف تؤثر المعايير الثقافية على تقديم الرعاية الصحية في مجتمعك؟"
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": null
+        },
+        {
+          "id": "10",
+          "text": {
+            "en": "What policies or leadership practices have advanced gender equity in healthcare?",
+            "ar": "ما هي السياسات أو ممارسات القيادة التي عززت المساواة بين الجنسين في مجال الرعاية الصحية؟"
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": null
+        },
+        {
+          "id": "11",
+          "text": {
+            "en": "How is the effectiveness of One Health initiatives measured in your organization?",
+            "ar": "كيف يتم قياس فعالية مبادرات \"صحة واحدة\" في مؤسستك؟"
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": null
+        },
+        {
+          "id": "12",
+          "text": {
+            "en": "Provide an example of intersectoral collaboration and its outcomes.",
+            "ar": "قدم مثالاً على التعاون بين القطاعات ونتائجه."
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": null
+        },
+        {
+          "id": "13",
+          "text": {
+            "en": "What are your top three recommendations for strengthening One Health and reducing gender inequities?",
+            "ar": "ما هي توصياتك الثلاث الأولى لتعزيز \"صحة واحدة\" والحد من عدم المساواة بين الجنسين؟"
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": null
+        },
+        {
+          "id": "14",
+          "text": {
+            "en": "How do gender-related health challenges affect future generations in your context?",
+            "ar": "كيف تؤثر التحديات الصحية المتعلقة بالجنسين على الأجيال القادمة في سياقك؟"
+          },
+          "instruction": {
+            "en": "",
+            "ar": ""
+          },
+          "subtype": null
+        }
+      ]
+    }
+  ]
+}
