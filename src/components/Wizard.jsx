@@ -220,6 +220,22 @@ export default function Wizard({ data, lang, onSubmit }) {
        );
     }
 
+    // --- Special Case: Question 8 (Country) ---
+    if (qId === "8") {
+       return (
+        <div key={qId} className="mb-6">
+          <label className="block font-medium text-lg mb-3">{q.text[lang]}</label>
+          <input
+            type="text"
+             className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500"
+             value={answers[answerKey] || ''}
+             onChange={(e) => handleAnswer(section.id, qId, e.target.value)}
+             placeholder={lang === 'en' ? "Enter your country" : "أدخل بلدك"}
+          />
+        </div>
+       );
+    }
+
     // Fallback
     return <div key={qId} className="text-red-500">Unknown Question Type</div>;
   };
