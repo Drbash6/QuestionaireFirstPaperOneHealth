@@ -16,6 +16,25 @@ export default function Wizard({ data, lang, onSubmit }) {
   };
 
   const handleNext = () => {
+    // Validation
+    const missing = [];
+    section.questions.forEach(q => {
+       const key = `${section.id}_${q.id}`;
+       const val = answers[key];
+       const isMissing = !val || (Array.isArray(val) && val.length === 0);
+       
+       if (isMissing) {
+         missing.push(q.id);
+       }
+    });
+
+    if (missing.length > 0) {
+       alert(lang === 'en' 
+         ? `Please answer all questions before proceeding.\nMissing: ${missing.join(', ')}` 
+         : `يرجى الإجابة على جميع الأسئلة للمتابعة.\nمفقود: ${missing.join(', ')}`);
+       return;
+    }
+
     if (currentSectionIndex < data.sections.length - 1) {
       setCurrentSectionIndex(prev => prev + 1);
       window.scrollTo(0, 0);

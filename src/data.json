@@ -698,11 +698,11 @@
           "id": "Barriers",
           "text": {
             "en": "Which barriers have you encountered?",
-            "ar": ""
+            "ar": "ما هي العوائق التي واجهتها؟"
           },
           "instruction": {
             "en": "(select all that apply)",
-            "ar": ""
+            "ar": "(اختر كل ما ينطبق)"
           },
           "subtype": "Checklist"
         }
