@@ -37,7 +37,6 @@ export default function Wizard({ data, lang, onSubmit }) {
     const answerKey = `${section.id}_${qId}`;
     
     // --- SECTION F: Qualitative (Text Area) ---
-    // Specifically targets Section F or the final qualitative questions
     if (section.id === 'F') {
       return (
         <div key={qId} className="mb-6">
@@ -81,23 +80,21 @@ export default function Wizard({ data, lang, onSubmit }) {
     }
 
     // --- SECTION D: Barriers (Checkbox + Other) ---
-    // Heuristic: Section D or explicit "Barriers" ID
     if (section.id === 'D' || qId === "Barriers") {
-       const opts = OPTIONS["Barriers"] || ["Option 1", "Option 2"];
+       const opts = OPTIONS["Barriers"] || [];
        const currentSelection = (answers[answerKey] && typeof answers[answerKey] === 'object') ? answers[answerKey] : [];
-       const isOtherSelected = currentSelection.some(item => item.startsWith("Other") || item.startsWith("أخرى"));
-
+       
        return (
         <div key={qId} className="mb-6">
           <label className="block font-medium text-lg mb-3">{qText}</label>
           <div className="space-y-3">
-            {opts.map((opt) => {
-              const baseOpt = opt; // The clean option text
-              // Check if this option is selected (exact match or, for 'Other', prefix match)
-              const isSelected = currentSelection.some(val => val === baseOpt || (baseOpt === "Other" && val.startsWith("Other:")) || (baseOpt === "أخرى" && val.startsWith("أخرى:")));
+            {opts.map((optObj) => {
+              const optVal = optObj.value;
+              const optLabel = optObj.label[lang] || optObj.label['en'];
+              const isSelected = currentSelection.some(val => val === optVal || (optVal === "Other" && val.startsWith("Other:")));
 
               return (
-                <div key={opt} className="">
+                <div key={optVal} className="">
                   <label className="flex items-center gap-3 p-3 rounded-lg border hover:bg-slate-50 cursor-pointer bg-white">
                     <input
                       type="checkbox"
@@ -105,37 +102,33 @@ export default function Wizard({ data, lang, onSubmit }) {
                       onChange={(e) => {
                          let newSelection = [...currentSelection];
                          if (e.target.checked) {
-                            if (opt === "Other" || opt === "أخرى") {
-                                // Add placeholder for other
-                                newSelection.push(`${opt}: `);
+                            if (optVal === "Other") {
+                                newSelection.push("Other: "); 
                             } else {
-                                newSelection.push(opt);
+                                newSelection.push(optVal);
                             }
                          } else {
-                            // Remove opt (and any detailed 'Other' text)
-                            newSelection = newSelection.filter(val => val !== opt && !val.startsWith(`${opt}:`));
+                            newSelection = newSelection.filter(val => val !== optVal && !val.startsWith(`${optVal}:`));
                          }
                          handleAnswer(section.id, qId, newSelection);
                       }}
                       className="w-5 h-5 text-blue-600 rounded"
                     />
-                    <span className="text-lg">{opt}</span>
+                    <span className="text-lg">{optLabel}</span>
                   </label>
                   
                   {/* Render Text Input ONLY if "Other" is this option and it is selected */}
-                  {((opt === "Other" || opt === "أخرى") && isSelected) && (
+                  {(optVal === "Other" && isSelected) && (
                     <div className="mt-2 ml-8">
                        <input 
                          type="text"
                          className="w-full p-2 border rounded border-slate-300 focus:ring-2 focus:ring-blue-500"
                          placeholder={lang === 'en' ? "Please specify..." : "يرجى التحديد..."}
-                         // Extract the custom text part
-                         value={currentSelection.find(val => val.startsWith(`${opt}:`))?.split(":")[1]?.trim() || ""}
+                         value={currentSelection.find(val => val.startsWith("Other:"))?.split(":")[1]?.trim() || ""}
                          onChange={(e) => {
                             const val = e.target.value;
-                            const newEntry = `${opt}: ${val}`;
-                            // Replace the old Other entry with new text
-                            const newSelection = currentSelection.map(item => item.startsWith(`${opt}:`) ? newEntry : item);
+                            const newEntry = `Other: ${val}`;
+                            const newSelection = currentSelection.map(item => item.startsWith("Other:") ? newEntry : item);
                             handleAnswer(section.id, qId, newSelection);
                          }}
                        />
@@ -150,7 +143,6 @@ export default function Wizard({ data, lang, onSubmit }) {
     }
 
     // --- SECTION C: Likert Scale ---
-    // Strictly for Section C
     if (section.id === 'C') {
       return (
         <div key={qId} className="mb-8 p-4 bg-white rounded-lg shadow-sm border border-slate-200">
@@ -169,7 +161,7 @@ export default function Wizard({ data, lang, onSubmit }) {
               >
                 <div className="font-bold text-xl mb-1">{opt.value}</div>
                 <div className="text-[10px] sm:text-xs text-center leading-tight px-1 hidden sm:block opacity-80">
-                  {lang === 'ar' ? opt.label : opt.label}
+                  {lang === 'ar' ? opt.labelAr : opt.label}
                 </div> 
               </button>
             ))}
@@ -183,38 +175,42 @@ export default function Wizard({ data, lang, onSubmit }) {
     }
 
     // --- Default / Section A & B: Multiple Choice & Checkbox ---
-    // If we have options defined, render choice
     if (OPTIONS[qId] || ["Checkbox"].includes(q.subtype)) {
         const isCheckbox = qId === "4"; 
-        const opts = OPTIONS[qId] || []; // Should be defined in constants
+        const opts = OPTIONS[qId] || []; 
 
        return (
         <div key={qId} className="mb-6">
           <label className="block font-medium text-lg mb-3">{qId}. {qText}</label>
           <div className="space-y-2">
-            {opts.map((opt) => (
-              <label key={opt} className="flex items-center gap-3 p-3 rounded-lg border hover:bg-slate-50 cursor-pointer bg-white">
+            {opts.map((optObj) => {
+              const optVal = optObj.value;
+              const optLabel = optObj.label[lang] || optObj.label['en'];
+
+              return (
+              <label key={optVal} className="flex items-center gap-3 p-3 rounded-lg border hover:bg-slate-50 cursor-pointer bg-white">
                 <input
                   type={isCheckbox ? "checkbox" : "radio"}
                   name={answerKey}
-                  value={opt}
+                  value={optVal}
                   checked={isCheckbox 
-                    ? (answers[answerKey] || []).includes(opt) 
-                    : answers[answerKey] === opt}
+                    ? (answers[answerKey] || []).includes(optVal) 
+                    : answers[answerKey] === optVal}
                   onChange={(e) => {
                      if (isCheckbox) {
                         const current = answers[answerKey] || [];
-                        if (e.target.checked) handleAnswer(section.id, qId, [...current, opt]);
-                        else handleAnswer(section.id, qId, current.filter(x => x !== opt));
+                        if (e.target.checked) handleAnswer(section.id, qId, [...current, optVal]);
+                        else handleAnswer(section.id, qId, current.filter(x => x !== optVal));
                      } else {
-                        handleAnswer(section.id, qId, opt);
+                        handleAnswer(section.id, qId, optVal);
                      }
                   }}
                   className="w-5 h-5 text-blue-600"
                 />
-                <span>{opt}</span>
+                <span>{optLabel}</span>
               </label>
-            ))}
+              );
+            })}
           </div>
         </div>
        );
